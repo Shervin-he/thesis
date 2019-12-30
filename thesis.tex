@@ -51,10 +51,12 @@
 	%	\firstlatinadvisor{Dr. Mahmood Neshati}
 	% چکیده به فارسی
 	\fa-abstract{	
-		رای‌گیری یکی از حساس‌ترین 
-		از سال ۲۰۰۹ تاکنون، با فراگیری بیت‌‌کوین شاهد افزایش ‌کاربرد‌های بلاک‌چین و سیستم‌های توزیع‌شده و بدون نیاز به اعتماد بوده‌ایم. بعد از انتشار بستر اتریوم تا به امروز قرار‌داد‌های هوشمند توزیع‌شده در این بستر رشد قابل توجهی داشته‌اند. به همین دلیل بررسی امنیتی قرار‌داد‌های این بستر اهمیت ویژه‌ای دارد. همچنین با ساخت این بستر فرصت مناسبی است تا سرویس‌های بیشمار مبتنی بر اعتماد فعلی خود و راه‌های جایگزین آن‌ها را در بستر بلاک‌چین بررسی کنیم.
-		\\
-		در این تحقیق ابتدا به معرفی ارز‌های دیجیتال و نحوه‌ی کارکرد آن‌ها می‌پردازیم، سپس تحقیقات امنیتی خود بسترها و کاربرد‌های آن‌ها را بررسی کرده و در نهایت به کاربرد آن‌ها برای رای‌گیری دیجیتال و چالش‌های این کار اشاره خواهیم کرد. 
+با توجه به اهمیت زیاد امنیت در انتخابات، سال‌هاست تحقیقات بسیاری برای ایجاد روش‌های رأی‌گیری امن صورت گرفته است. با این حال، تمامی این روش‌ها نیازمند یک عامل مورد اعتماد هستند که می‌تواند نتیجه‌ی انتخابات را تغییر دهد. با ایجاد ابزار بیت‌کوین به عنوان یک ارز دیجیتال، بدون نیاز به عامل مورد اعتماد و در نتیجه فراگیری تکنولوژی زنجیره‌ی‌ قالبی، برای حذف عامل مورد اعتماد در کاربردهای مختلف از آن استفاده شد. روش‌های رأی‌گیری الکترونیک با استفاده از زنجیره‌ی قالبی نیز ایجاد شدند که بدون نیاز به اعتماد، با شفافیت در آراء درستی شمارش رأی‌های انتخابات را تضمین می‌کردند. اما این موارد ناشناس ماندن آراء را به خطر می‌انداختند و در انتخابات‌های حساس خرید رأی - با پول یا زور - را آسان می‌کردند.
+\\
+در این تحقیق یک روش رأی‌گیری امن به کمک زنجیره‌ی قالبی ارائه می‌شود که بدون به خطر انداختن ناشناسی در آراء رأی‌گیری، نیاز به فرد مورد اعتماد را به حداقل می‌رساند. در این روش به یک راه‌حل برای ثبت رأی ناشناس اما قابل ردیابی نیاز است؛ این راه از امضای کورکورانه و اثبات‌های بی‌دانش به عنوان ابزارهای رمزنگاری استفاده می‌کند تا بدون افشای اطلاعات خصوصی درون آراء (کاندیدای انتخابی کاربر) تعداد رأی هر کاندیدا را در انتهای انتخابات مشخص کند.
+\\
+اگرچه در راستای حفظ امنیت رأی‌دهندگان وجود حوزه‌ی رأی‌گیری (برای حفظ امنیت فیزیکی) الزامی است، اما نمی‌توان از احتمال خراب‌کار بودن آن صرف نظر کرد. بنابراین روش امن انتخابات باید امکان خرابکار بودن حوزه را نیز در نظر گرفته و با وجود آن نیز درست عمل کند. در روش پیشنهادی این تحقیق هیچ حوزه‌ای نمی‌تواند بدون حضور کاربر از جانب او رأی ثبت کند و تمامی آراء در حین یا بعد از انتخابات قابل ردیابی هستند.
+روش پیشنهادی این تحقیق علاوه بر جلوگیری از ناشناس ماندن آراء، به کاربران اطمینان می‌دهد که رأی آن‌ها به درستی ثبت خواهد شد. همچنین وجود زنجیره‌ی قالبی به عنوان رد دیجیتال انتخابات در این روش، به هر شخص ثالثی این امکان را می‌دهد تا صحت شمارش آراء را بررسی کرده و از درستی اجرای انتخابات اطمینان حاصل کند.
 	}
 	%کلمات کلیدی:
 	\keywords{بلاک‌چین، رای‌گیری الکترونیک، امنیت}
@@ -125,8 +127,9 @@
 % چکیده به انگلیسی
 \en-abstract
 {
-	Since Bitcoin's wide adaption in 2009 there has been a abundance of trustless applications based of Bitcoin's use of blockchain technology and after the release of Ethereum's smart contract platform we are seeing more and more usages of smart contracts. With this increase in usage of these platforms we on must be mindful of the security implications of these platforms. \\
-	In This research we first review the basics of digital currencies and their underlying technologies and then review the security considerations of their platforms and the applications based on them and finally move to voting as a usecase of these platforms and consider the challenges we face while implementing such a system.
+E-voting systems have been in use since the 1960s and even though a lot of research has been conducted on this subject, yet all of the practical solutions for E-voting required a trusted party. That all changed after the development of bitcoin as a trustless digital currency in 2009, and subsequent use of blockchain to eliminate the need for a trusted party in different applications and so there have been a few E-voting systems that used blockchain to create a transparent and trustless system, however, this transparency usually comes at the cost of the voter’s anonymity. If people are allowed to check their votes after the voting process an adversary could force someone to choose a specific candidate and check whether or not they have complied with the demand.
+\\
+In this thesis, we present an E-voting system that is trustless without compromising the voter’s anonymity. Blind signatures and zero-knowledge proof are the cryptographic blocks on which we build a trustless yet anonymous E-voting system. Since a safe voting station is required to guarantee the physical safety of the voters, we provide the voters with a process that ensures their votes are counted correctly without ever trusting the voting station to behave in their best interest. While the individual votes will remain encrypted we create cryptographic proofs to count the number of votes for each candidate and the blockchain will act as a digital trail that can be audited by any third party. 
 }
 
 % کلمات کلیدی انگلیسی 
